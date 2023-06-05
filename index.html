@@ -27,10 +27,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link " >Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link "href="#homie">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" >About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" 
@@ -46,21 +46,21 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Contact</a>
+                    <a class="nav-link" href="#con">Contact</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link mr-2" href="https://drive.google.com/file/d/1G9eJt5j702Csrqkb0-WjVRhaFYggGjvP/view?usp=drive_link"download>Resume<i class="fa-solid fa-download ml-1"></i></a>
                   </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick=search()>Search</button>
               </form>
             </div>
           </nav>
     </div>
       <!-- Home-section -->
-      <div class="container02 d-flex flex-column justify-content-center">
+      <div class="container02 d-flex flex-column justify-content-center" id="homie">
         <div class="container">
             <div class="text-center">
                 <h1 class="name h1">I'M NaveenKumar</h1>
@@ -70,13 +70,51 @@
         </div>
     </div>
     <!-- About Section -->
+    <div id="About">
+      <div class=" container03">
+        <h1 class="text-center justify-content-center">About</h1>
+        <div class="col-12 col-md-6">
+          <p>
+            <a class="btn btn-primary" class="active" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Personal Information</a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Educational Qualifications</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">All Information</button>
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+               <ul>
+                <li class="d-flex">Name:<p class="ctn">Naveenkumar R</p></li>
+                <li class="d-flex">DOB:<p class="ctn">01/06/2001</p></li>
+                <li class="d-flex">State:<p class="ctn">Tamilnadu</p></li>
+                <li class="d-flex">pincode:<p class="ctn">637408</p></li>
+               </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                <ul>
+                  <li class="d-flex">Degree:<p class="ctn">Bachelor of Engineering</p></li>
+                  <li class="d-flex">Field Of Study:<p class="ctn">Bio-Medical Engineering</p></li>
+                  <li class="d-flex">College:<p class="ctn">DR.NGP Institute Of Technology,Coimbatore</p></li>
+                  <li class="d-flex">Year of passout:<p class="ctn">2023</p></li>
+                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- skills -->
     <div class="conatiner03">
         <h1 class="text-center mt-2 mb-0">Skills</h1>
         <hr>
         <div class="skills-div">
             <div class="progress">
-                <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">HTML5</div>
+                <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">HTML5</div>
               </div>
               <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS3</div>
@@ -104,20 +142,22 @@
                 <button type="button" class="pro--types btn btn-outline-success">React</button>
             </div>
               <div class="container">
+      
                 <div class="row">
-                  <!-- pro1 -->
-                 <div class="col-12 col-md-4 card justify-content-center mt-2 mb-4 mr-3" style="width: 18rem;">
-                  <img src="https://res.cloudinary.com/dfhew0ljw/image/upload/v1685337561/Screenshot_8_ezh1xn.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Food Menu Card</h5>
-                    <p class="card-text">Here! showing restaurant Menu card (some fastfoods and rice..)</p>
-                    <h3></h3>
-                    <div class="d-flex flex-row mt-2 ">
-                      <a class="icon" href="https://naveenkumarr-onyx.github.io/Edyoda-assignment/assignment/foodwebpage.html"><i class="fa-solid fa-link"></i></a>
-                      <a class="icon" href="https://github.com/naveenkumarr-onyx/Edyoda-assignment"><i class="fa-brands fa-github"></i></a>
+                    <!-- pro1 -->
+            
+                  <div class=" col-12 col-md-4 card justify-content-center mt-2 mb-4 mr-3" style="width: 18rem;">
+                    <img src="https://res.cloudinary.com/dfhew0ljw/image/upload/v1685337561/Screenshot_8_ezh1xn.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Food Menu Card</h5>
+                      <p class="card-text">Here! showing restaurant Menu card (some fastfoods and rice..)</p>
+                      <h3></h3>
+                      <div class="d-flex flex-row mt-2 ">
+                        <a class="icon" href="https://naveenkumarr-onyx.github.io/Edyoda-assignment/assignment/foodwebpage.html"><i class="fa-solid fa-link"></i></a>
+                        <a class="icon" href="https://github.com/naveenkumarr-onyx/Edyoda-assignment"><i class="fa-brands fa-github"></i></a>
+                      </div>
                     </div>
                   </div>
-                </div>
                 <!-- pro2 -->
                 <div class="col-12 col-md-4 card justify-content-center mt-2 mb-4 mr-3" style="width: 18rem;">
                   <img src="https://res.cloudinary.com/dfhew0ljw/image/upload/v1685339321/Screenshot_9_vvyuai.png" class="card-img-top" alt="...">
@@ -275,6 +315,10 @@
                     </div>
                   </div>
                 </div>
+            </div>
+
+
+                
               </div>
             </div>
                 </div>
@@ -302,5 +346,38 @@
             </div>
         </div>
     </div>
+    <!-- <div class="searchable-item">
+      <h2>Item 1</h2>
+      <p>This is the content of item 1.</p>
+    </div>
+    
+    <div class="searchable-item">
+      <h2>Item 2</h2>
+      <p>This is the content of item 2.</p>
+    </div>
+    
+    <div class="searchable-item">
+      <h2>Item 3</h2>
+      <p>This is the content of item 3.</p>
+    </div> -->
+    <!-- <script >
+      function search() {
+    var input = document.getElementById("search-input").value.toLowerCase();
+    console.log(input)
+    
+    // Get the search input value and convert it to lowercase for case-insensitive search
+    var items = document.getElementsByClassName("searchable-item"); // Get all the elements with the "searchable-item" class
+  
+    for (var i = 0; i < items.length; i++) {
+      var itemText = items[i].innerText.toLowerCase(); // Get the text content of the current item and convert it to lowercase
+  
+      if (itemText.includes(input)) {
+        items[i].style.display = ""; // Show the item if the search input is found in its text
+      } else {
+        items[i].style.display = "none"; // Hide the item if the search input is not found
+      }
+    }
+  }
+    </script> -->
   </body>
 </html>
