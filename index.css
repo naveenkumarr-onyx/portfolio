@@ -4,6 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('https://www.1001fonts.com/digital-7-font.html');
+}
 /* common */
 h1{
     margin: 0px;
@@ -23,6 +27,29 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  */
     color: #ffff;
     padding: 5px;
     margin-right: 5px;
+}
+.clock{
+    display: flex;
+    background-color: hsl(180,29.63%,10.59%);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    z-index: -1px;
+}
+ #hour{
+    margin-right: 5px;
+    font-family:clock-font;
+
+}
+#meridian{
+    margin-left: 10px;
+}
+.clock h1{
+    font-size: 25px;
+    margin: 0px;
+    font-family:'digital-clock-font' ;
+
 }
 .nav-link{
     padding: 50px;
