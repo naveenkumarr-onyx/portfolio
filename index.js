@@ -7,7 +7,7 @@ setInterval(function showtime(){
 
     let a = new Date;
     let  hours= a.getHours();
-    hours = hours > 12 ? hours % 12 :hours;
+    hours = hours > 12 ? hours % 12 : hours;
     hours = hours < 10 ? "0" + hours : hours;
     x.innerHTML = hours + ""+ ":";
      e.innerHTML = hours < 12 ? "AM" :"PM"; 
@@ -21,9 +21,16 @@ setInterval(function showtime(){
     z.innerHTML=s;
 },1000);
 
-const z=new Date;
-let a = z.getHours();
-let b = a < 12 ? a > 12 ?  alert( "Good Morning!" )  : alert("Good Afternoon" )  :alert("Good Evening!" );
+// const z=new Date;
+// let a = z.getHours();
+// let b = a < 12 ? a > 12 ?  alert( "Good Morning!" )  : alert("Good Afternoon" )  :alert("Good Evening!" );
+function  search(){
+  let search = document.getElementById("search-input");
+  let searchValue = search.value;
+  console.log(searchValue);
+}
+
+
 
 
 // setInterval(() => {
