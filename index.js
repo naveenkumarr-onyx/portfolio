@@ -7,7 +7,7 @@ setInterval(function showtime(){
 
     let a = new Date;
     let  hours= a.getHours();
-    hours = hours > 12 ? hours % 12 :"0"+ hours;
+    hours = hours > 12 ? hours % 12 :hours;
     hours = hours < 10 ? "0" + hours : hours;
     x.innerHTML = hours + ""+ ":";
      e.innerHTML = hours < 12 ? "AM" :"PM"; 
