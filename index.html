@@ -12,6 +12,8 @@
     <script src="https://kit.fontawesome.com/074edb8703.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
@@ -52,8 +54,8 @@
                   </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick=search()>Search</button>
+                <input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search">Search</button>
               </form>
             </div>
           </nav>
@@ -85,16 +87,21 @@
             <button class="btn btn-info mt-1" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">All Information</button>
           </p>
         </div>
-        <div class="row">
+        <div class="row ">
           <div class="col-12 col-md-6">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-              <div class="card card-body">
-               <ul>
-                <li class="d-flex">Name:<p class="ctn">Naveenkumar R</p></li>
-                <li class="d-flex">DOB:<p class="ctn">01/06/2001</p></li>
-                <li class="d-flex">State:<p class="ctn">Tamilnadu</p></li>
-                <li class="d-flex">Pincode:<p class="ctn">637408</p></li>
-               </ul>
+            <div class="collapse multi-collapse aboutctn" id="multiCollapseExample1">
+              <div class="card card-body ">
+                <div>
+                  <img src="./IMG_3750 copy co.jpg" class="profile-img" alt="IMG_3750">
+                </div>
+                <div>
+                  <ul>
+                    <li class="d-flex">Name:<p class="ctn">Naveenkumar R</p></li>
+                    <li class="d-flex">DOB:<p class="ctn">01/06/2001</p></li>
+                    <li class="d-flex">State:<p class="ctn">Tamilnadu</p></li>
+                    <li class="d-flex">Pincode:<p class="ctn">637408</p></li>
+                   </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -140,7 +147,7 @@
         <div class="container04">
             <h1 class=" col-12 text-center mt-2 mb-0">Projects</h1>
             <hr>
-            <div class=" mt-2 mb-4  d-flex flex-column">
+            <div class=" mt-2 mb-4  d-flex flex-column btn">
                 <button type="button" class=" pro--types btn btn-outline-info">All</button>
                 <button type="button" class="pro--types btn btn-outline-primary">HTML & CSS</button>
                 <button type="button" class="pro--types btn btn-outline-secondary">JavaScript</button>

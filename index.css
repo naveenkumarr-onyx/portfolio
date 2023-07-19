@@ -61,6 +61,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  */
     width: 100%;
     background-image:url("https://res.cloudinary.com/dfhew0ljw/image/upload/v1685283575/Download_wallpaper_3840x2400_leaves_green_dark_plant_4k_ultra_hd_16_10_hd_background_tvlwwv.jpg");
     background-size: cover;
+    z-index: 1;
     height: 700px;
 }
 .name{
@@ -81,17 +82,23 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  */
 /*********/
 /* About */
 /*********/  
-
+.aboutctn{
+    display: flex;
+}
 .ctn{
     padding-left: 5px;
-  
     font-weight:bold;
+}
+
+.profile-img{
+    width: 400px;
+    border-radius: 20%;
+    margin: auto;
 }
 
 /* ******** */
 /* projects */
 /* ******** */
-
 .pro--types{
     margin-bottom: 5px;
 }
